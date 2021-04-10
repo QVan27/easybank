@@ -1,0 +1,171 @@
+/* ### Primary
+
+- Dark Blue: hsl(233, 26%, 24%)
+- Lime Green: hsl(136, 65%, 51%)
+- Bright Cyan: hsl(192, 70%, 51%)
+
+### Neutral
+
+- Grayish Blue: hsl(233, 8%, 62%)
+- Light Grayish Blue: hsl(220, 16%, 96%)
+- Very Light Gray: hsl(0, 0%, 98%)
+- White: hsl(0, 0%, 100%) */
+
+/* :root {
+    --font: 18px;
+    --h1: 40px;
+  } */
+
+.wrap {
+    max-width: 1110px;
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Public Sans', sans-serif;
+}
+
+h1 {
+    letter-spacing: 1.5px;
+}
+
+p {
+    color: #c4c4c4;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+}
+
+.menu {
+    width: 330px;
+}
+
+.menu a {
+    color: #c4c4c4;
+    position: relative;
+}
+
+.menu a::before {
+    content: "";
+    position: absolute;
+    background: hsl(136, 65%, 51%);
+    width: 100%;
+    height: 3px;
+    bottom: -31.6px;
+    transform-origin: 100% 0;
+    transform: scaleX(0);
+    transition: transform .4s;
+}
+
+.menu a:hover::before {
+    transform-origin: 0 0;
+    transform: scaleX(1);
+}
+
+.request {
+    background: rgb(27, 199, 38);
+    background: linear-gradient(101deg, rgba(27, 199, 38, 1) 0%, rgba(24, 209, 136, 1) 50%, rgba(14, 155, 184, 1) 100%);
+    color: white;
+    width: 165px;
+    height: 49px;
+}
+
+.request:hover {
+    opacity: .5;
+    transition: .4s;
+}
+
+.banner {
+    height: 656px;
+    background-color: hsl(0, 0%, 98%);
+}
+
+.firstImgBanner {
+    top: -40%;
+    right: -25%;
+}
+
+.secondImgBanner {
+    top: -6.2%;
+    right: -9%;
+    z-index: 10;
+}
+
+.leftContent {
+    width: 430px;
+    height: 250px;
+}
+
+.choose {
+    height: 676px;
+    background-color: hsl(0, 0%, 96%);
+}
+
+.chooseWrap {
+    height: 470px;
+}
+
+.articles {
+    height: 659px;
+    background-color: hsl(0, 0%, 98%);
+}
+
+.articlesWrap {
+    height: 487px;
+}
+
+.articles img {
+    width: 100%;
+}
+
+.wrapCard {
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    height: 191px;
+    background-color: hsl(233, 26%, 24%);
+}
+
+footer .wrap {
+    height: 100%;
+}
+
+.social-icons {
+    height: 100%;
+}
+
+.social-icons ul {
+    height: 50%;
+}
+
+.social-icons ul i {
+    transform: scale(1.5);
+    color: #fff;
+}
+
+.imgBox {
+    height: 50%;
+}
+
+.imgBox img {
+    filter: brightness(2);
+}
+
+.link-footer {
+    height: 100%;
+}
+
+.link-footer a {
+    color: #fff;
+}
+.link-footer a:hover, .social-icons ul i:hover  {
+    color: hsl(136, 65%, 51%);
+    transition: .3s;
+}
+
+.request-footer p {
+    margin: 20px 0 -20px 0;
+}
